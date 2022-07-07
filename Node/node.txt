@@ -1,0 +1,48 @@
+Web devs:
+    Front end
+    Back end
+    Full stact
+
+
+How web works?
+
+    |=> Client      __
+    |=> Server        | => connected by API
+    |=> Database    __|
+
+
+REST API: =>
+    |=> Stateless => requests dont depend on prev Stateless
+    |=> allows various data formats
+    |=> well defined error handling and methods
+
+    |=> HTTP Status Codes => indicate whether a request was successful or not 
+        |=> Ex: 200, 404, 401
+    |=> HTTP methods:
+        GET => read
+        POST => write
+        PUT => update
+        DELETE => delete data
+
+PUT vs POSR:
+    * PUT method is called when you have to modify a single resource while 
+        POST method is called when you have to add a child resource.
+    * PUT method response can be cached but you cannot cache POST method responses
+    * You can use UPDATE query in PUT whereas you can use create query in POST.
+
+
+Node.js => Runtime Environment
+
+|=> allows to run js files outside browser env.
+|=> V8 engine running in system instead of browser.
+    |=> V8 is Google’s open source high-performance JavaScript and WebAssembly engine, written in C++. 
+        It is used in Chrome and in Node.jsV8 is Google’s open source high-performance JavaScript and WebAssembly engine, 
+            written in C++. 
+        It is used in Chrome and in Node.js
+
+Two ways of using node:
+    |=> From Node CLI. => In Node CLI, pressing enter executes the code entered.
+                        |=> Pressing Shift + enter goes to a new line without executing the previous line.
+                            Node can also be using in cmd terminal itself by just typing "node" in the terminal.
+    |=> Running a js file in a node environment.
+

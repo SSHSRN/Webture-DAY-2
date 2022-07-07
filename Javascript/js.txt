@@ -1,0 +1,162 @@
+Basic requirements to build a Website => Html, Css and Js.
+
+How websites work => Client requests for the website.
+    |=> Server returns the response as Html, Css, Js.
+
+Js => High level dynamic programming language.
+    |=> can be executed in the browser itself.
+    |=> for adding functionalities in a website.
+    |=> allows client side scripting
+
+Adding Js:   
+    |=> Internal => added in the HTML file itself (using script tag)
+    |=> External => added in an external .js file, which is then linked to the HTML file using <script src=""> tag.
+
+Inbuilt functions:
+    alert() => warning
+    console.log() => print a message in the console
+    prompt => Alert with input. The input to a prompt will be printed in the console.
+
+Datatypes:
+    Numbers,
+    String,
+    Boolean,
+    Null,
+    Undefined.
+
+Variable types:
+    var => global variable.
+    let => local variable.
+    const => value cannot be changed once declared.
+
+Relational operators:
+    == => Equal value.
+    != => Not equal value.
+    === => Equal value and Same Datatype.
+    !== => Not equal value and Different Datatype.
+    * The rest are general operators(>,<,>=,<=)
+
+Array:
+
+    * Initialising:
+        type arrname = []
+        type arrname = new Array()
+
+    * Finding length of array:
+        arrname.length()
+
+    * Entering values into an array:
+        |=> arrname.push(val) => pushes a value into the array at the end.
+        |=> arrname.unshift(val) => adds one or more items to the beginning of an array and 
+            returns the new length of the modified array.
+        |=> const newarr = [val].concat(arrname) => combine two or more arrays
+        |=> ES6 Spread operator => The spread syntax was a feature added to the ES6 version of JavaScript 
+            that allows you to iterate over an array and expand its values where zero or more arguments or elements are expected.
+            |=> arrname = [val,...arrname]; => adds the val to the array arrname.
+
+    * Deleting values from an array:
+        |=> arrname.pop() => Deletes last element.
+        |=> arrname.shift() => Delete first element.
+        |=> delete arrname[ind] => frees the memory at the index.
+
+    * Splice method => change the contents of an array by removing or replacing the existing items and/or adding new ones in place. 
+                        The first argument defines the location at which to begin adding or removing elements. 
+                        The second argument defines the number of elements to remove. 
+                        The third and subsequent arguments are optional; they define elements to be added to the array.
+
+    Objects:
+
+    * Initialising:
+        let x = {
+            name: "Test",
+            age: 20
+        }
+
+    * Accessing objects:
+        x.name, x.age
+
+    Functions:
+
+        |=> Regular => general function representation.
+            |==> Syntax:
+                hello(){
+                    alert("Hi)
+                }
+
+        |=> Arrow => shortcut to regular function => supported only by ES6.
+            |==> Syntax:
+                let hello = () => {
+                    alert("Hi");
+                }
+
+
+DOM manipulation:
+    DOM => Document Object Model.
+
+    When a web page is loaded, the browser creates a Document Object Model of the page.
+
+    The HTML DOM model is constructed as a tree of Objects.
+
+    With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+
+    JavaScript can change all the HTML elements in the page
+    JavaScript can change all the HTML attributes in the page
+    JavaScript can change all the CSS styles in the page
+    JavaScript can remove existing HTML elements and attributes
+    JavaScript can add new HTML elements and attributes
+    JavaScript can react to all existing HTML events in the page
+    JavaScript can create new HTML events in the page
+
+
+DOM Methods  => actions you can perform (on HTML Elements).
+DOM properties => values (of HTML Elements) that you can set or change.
+
+document.getElementById("test").innerHTML = "Hello" => gets the element having id "test" and adds "Hello" as it's inner html.
+    |=> getElementById => Method
+    |=> innerHTML => Property.
+
+document.getElementsByTagname("test").innerHTML = "Hello" => gets all elements having tagname "test" and 
+                                                                adds "Hello" as their inner html.
+    |=> returns Nodelist
+
+document.getElementsByClassName("test").innerHTML = "Hello" => gets all elements having tagname "test" and 
+                                                                adds "Hello" as their inner html..
+
+
+Datatypes:
+
+    Window => First in the hierarchy. It the outmost element of the object hierarchy.
+
+    Document => entire page
+
+    Node => These are often elements, but they also be attributes, comments, text and other DOM types.
+
+    Element => selecting a specific element
+
+    Attr =>
+
+    * Document vs Window:
+        When JavaScript is executed inside the browser, the window object is the JavaScript Global object. 
+        The document object is a property of the window object.
+        The window object represents the browser window.
+        The document object represents the HTML document loaded in that window.
+
+
+
+Changing html elements:
+    innerhtml => change inner HTML
+    .style.property = "
+    change style
+    ele.attribute = ""
+
+
+.hasAttributes() => checks f an element has attr
+
+
+Reacting to events:
+    Events => Something happening in the document
+    like clicking a button(onclick="") onload,....
+
+Event listener => listens to events
+
+syntax => addEventListener("",func)
